@@ -55,7 +55,7 @@ render () {
       <h3>The parent component header now is set to: {this.state.header}</h3>
       <HeaderForm changePHeader={this.changePHeader}/>
 
-      <ul>{itemList}</ul>
+      <ol>{itemList}</ol>
     </div>
     );
 
