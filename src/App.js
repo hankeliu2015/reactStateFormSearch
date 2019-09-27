@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -6,8 +6,9 @@ import HeaderForm from './components/headerForm';
 import Search from './components/search';
 import Item from './components/item';
 
-function App() {
+class App extends Component {
 
+render () {
 
   return (
     <div className="App">
@@ -21,7 +22,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
           Learn React
         </a>
       </header>
@@ -31,7 +32,9 @@ function App() {
       <HeaderForm />
 
     </div>
-  );
+    );
+
+  }
 }
 
 export default App;
