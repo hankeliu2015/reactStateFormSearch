@@ -10,7 +10,10 @@ import Items from './data/items';
 class App extends Component {
 
   state = {
-    header: ''
+    header: '',
+    allItems: Items,
+    filtered: false,
+    filteredItems: []
   }
 
   changePHeader = (value) => {
@@ -19,6 +22,13 @@ class App extends Component {
     })
   }
 
+  arraySelection = () => {
+    if (this.state.filtered) {
+      return this.state.filteredItems;
+    } else {
+      return this.state.allItems;
+    }
+  }
 render () {
   return (
     <div className="App">
