@@ -18,7 +18,7 @@ class HeaderForm extends Component {
       <form>
         <h4>Please add contents to change header</h4>
         <input type='text' placeholder='Change header content' value={this.state.header} onChange = {this.onChange}/>
-        <p>State header value: {this.state.header}</p>
+        <p>child componet State header value: {this.state.header}</p>
       </form>
     )
   }

@@ -37,7 +37,7 @@ render () {
       </header>
 
 
-      <h3>The header now is set to: {this.state.header}</h3>
+      <h3>The parent component header now is set to: {this.state.header}</h3>
       <HeaderForm changePHeader={this.changePHeader}/>
 
     </div>
