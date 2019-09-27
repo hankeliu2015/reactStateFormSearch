@@ -8,8 +8,17 @@ import Item from './components/item';
 
 class App extends Component {
 
-render () {
+  state = {
+    header: ''
+  }
 
+  changePHeader = (value) => {
+    this.setState({
+      header: value
+    })
+  }
+
+render () {
   return (
     <div className="App">
       <header className="App-header">
@@ -28,8 +37,8 @@ render () {
       </header>
 
 
-      <h3>This is the project header</h3>
-      <HeaderForm />
+      <h3>The header now is set to: {this.state.header}</h3>
+      <HeaderForm changePHeader={this.changePHeader}/>
 
     </div>
     );

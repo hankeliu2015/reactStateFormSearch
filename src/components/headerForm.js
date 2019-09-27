@@ -10,7 +10,7 @@ class HeaderForm extends Component {
     this.setState( {
       header: e.target.value
     })
-    // this.props.changePHeader(e.target.value);
+    this.props.changePHeader(e.target.value);
   }
 
   render() {
