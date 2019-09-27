@@ -2,6 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import HeaderForm from './components/headerForm';
+import Search from './components/search';
+import Item from './components/item';
+
 function App() {
   return (
     <div className="App">
@@ -22,6 +26,8 @@ function App() {
 
 
       <h3>This is the project header</h3>
+      <HeaderForm />
+
     </div>
   );
 }
