@@ -5,6 +5,7 @@ import './App.css';
 import HeaderForm from './components/headerForm';
 import Search from './components/search';
 import Item from './components/item';
+import Items from './data/items';
 
 class App extends Component {
 
