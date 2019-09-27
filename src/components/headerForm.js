@@ -11,6 +11,7 @@ class HeaderForm extends Component {
       header: e.target.value
     })
     this.props.changePHeader(e.target.value);
+    
   }
 
   render() {

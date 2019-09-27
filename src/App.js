@@ -30,6 +30,20 @@ class App extends Component {
     }
   }
 
+  changeFilterInfo = (arr) => {
+    if (arr === []) {
+      this.setState({
+        filtered: false
+      })
+    } else {
+      this.setState({
+        filtered: true,
+        filteredItems: arr
+      })
+    }
+  }
+
+
 render () {
 
   let itemList = this.arraySelection().map((item, index) =>
@@ -54,7 +68,8 @@ render () {
 
       <h3>The parent component header now is set to: {this.state.header}</h3>
       <HeaderForm changePHeader={this.changePHeader}/>
-
+      <br></br>
+      <Search orgItems={this.state.allItems} changePFilterInfo={this.changeFilterInfo}/>
       <ol>{itemList}</ol>
     </div>
     );
