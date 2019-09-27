@@ -29,7 +29,11 @@ class App extends Component {
       return this.state.allItems;
     }
   }
+
 render () {
+
+  let itemList = this.arraySelection().map((item, index) =>
+    <Item name={item.name} key={index+1} />)
   return (
     <div className="App">
       <header className="App-header">
@@ -51,6 +55,7 @@ render () {
       <h3>The parent component header now is set to: {this.state.header}</h3>
       <HeaderForm changePHeader={this.changePHeader}/>
 
+      <ul>{itemList}</ul>
     </div>
     );
 
